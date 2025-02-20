@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api/post",
-        destination: "https://jsonplaceholder.typicode.com/post",
+        destination: "https://jsonplaceholder.typicode.com/posts",
       },
     ];
   },
