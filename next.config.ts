@@ -6,17 +6,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/api/post",
-        destination: "/https://jsonplaceholder.typicode.com",
-      },
-    ];
-  },
-  // redirect
-  async redirects() {
-    return [
-      {
-        source: "/api",
-        destination: "/guide",
-        permanent: true,
+        destination: "https://jsonplaceholder.typicode.com/post",
       },
     ];
   },
