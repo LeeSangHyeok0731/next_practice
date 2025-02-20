@@ -1,20 +1,26 @@
-import { useRouter } from "next/router";
+"use client";
+
+import { useRouter } from "next/navigation"; // ✅ next/router ❌ → next/navigation ⭕
+
 import styled from "styled-components";
 
 const HeaderBox = styled.div`
   width: 100%;
   height: 100px;
   background-color: tomato;
+  display: flex;
+  flex-direction: row;
 `;
 
 export default function Header() {
-  const { push } = useRouter();
+  const router = useRouter();
+
   return (
     <HeaderBox>
-      <p onClick={() => push("/home")}>홈</p>
-      <p onClick={() => push("/guid")}>가이드</p>
-      <p onClick={() => push("/fag")}>Fag</p>
-      <p onClick={() => push("/user")}>user</p>
+      <p onClick={() => router.push("/home")}>홈</p>
+      <p onClick={() => router.push("/guid")}>가이드</p>
+      <p onClick={() => router.push("/faq")}>FAQ</p>
+      <p onClick={() => router.push("/user")}>User</p>
     </HeaderBox>
   );
 }
