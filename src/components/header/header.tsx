@@ -23,6 +23,7 @@ export default function Header() {
       <p onClick={() => router.push("/guide")}>가이드</p>
       <p onClick={() => router.push("/faq")}>FAQ</p>
       <p onClick={() => router.push("/user")}>User</p>
+      <p onClick={() => router.push("/unknown")}>존재하지 않는 페이지</p>
     </HeaderBox>
   );
 }
