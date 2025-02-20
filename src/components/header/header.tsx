@@ -17,8 +17,8 @@ export default function Header() {
 
   return (
     <HeaderBox>
-      <p onClick={() => router.push("/home")}>홈</p>
-      <p onClick={() => router.push("/guid")}>가이드</p>
+      <p onClick={() => router.push("/")}>홈</p>
+      <p onClick={() => router.push("/guidd")}>가이드</p>
       <p onClick={() => router.push("/faq")}>FAQ</p>
       <p onClick={() => router.push("/user")}>User</p>
     </HeaderBox>
