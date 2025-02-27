@@ -12,7 +12,7 @@ export default function Home() {
   const [data, setData] = useState<Data[]>([]);
 
   useEffect(() => {
-    fetch("/api/post")
+    fetch("/api/posts")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
